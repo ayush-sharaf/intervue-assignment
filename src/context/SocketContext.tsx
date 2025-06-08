@@ -33,7 +33,7 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({ children }) => {
     if (typeof window !== 'undefined') {
       // Dynamically import to avoid SSR issues
       const { io } = require('socket.io-client');
-      const socketInstance: Socket = io('http://localhost:3001');
+      const socketInstance: Socket = io('https://pollproject-backend.onrender.com/');
 
       socketInstance.on('connect', () => setIsConnected(true));
       socketInstance.on('disconnect', () => setIsConnected(false));
