@@ -217,7 +217,7 @@ const StudentInterface: React.FC = () => {
             <div className="flex items-center">
               
               <h1 className="text-2xl font-bold text-gray-900">Welcome, {studentName}!</h1>
-              <div className="ml-4 px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+              <div className="ml-4 px-3 py-1 bg-[#8F64E1] text-green-800 rounded-full text-sm">
                 {isConnected ? 'Connected' : 'Connecting...'}
               </div>
             </div>
