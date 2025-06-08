@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Student Polling Project
+
+A real-time collaborative polling platform built with Next.js, Express, and Socket.IO.
+
+## Project Overview
+
+This project is a full-stack application consisting of a Next.js frontend and an Express.js backend. It features real-time communication using Socket.IO and uses PostgreSQL as the database.
+
+## Tech Stack
+
+### Frontend
+- Next.js 15.3.3
+- React 19
+- TypeScript
+- TailwindCSS
+- Socket.IO Client
+- Next Link
+- Lucide React (for icons)
+
+### Backend
+- Express.js
+- Socket.IO
+- PostgreSQL
+- Node.js
+- CORS
+- UUID
+
+## Project Structure
+
+```
+.
+├── frontend/               # Next.js frontend application
+│   ├── src/               # Source code
+│   ├── public/            # Static files
+│   ├── package.json       # Frontend dependencies
+│   └── tsconfig.json      # TypeScript configuration
+│
+└── backend/               # Express.js backend application
+    ├── index.js          # Main server file
+    └── package.json      # Backend dependencies
+```
+
+## Prerequisites
+
+- Node.js (Latest LTS version recommended)
+- PostgreSQL
+- npm or yarn package manager
 
 ## Getting Started
 
-First, run the development server:
+### Backend Setup
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Navigate to the backend directory:
+   ```bash
+   cd backend
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Create a `.env` file in the backend directory with the following variables:
+   ```
+   DATABASE_URL=your_postgresql_connection_string
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Start the backend server:
+   ```bash
+   npm start
+   ```
 
-## Learn More
+### Frontend Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The frontend will be available at `http://localhost:3000` and the backend at `http://localhost:3001`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development
+
+- Frontend development server: `npm run dev` (in frontend directory)
+- Backend development server: `npm start` (in backend directory)
+- Build frontend: `npm run build` (in frontend directory)
+- Start production frontend: `npm start` (in frontend directory)
+
+## Features
+
+- Real-time communication using Socket.IO
+- Modern UI with TailwindCSS
+- Type-safe development with TypeScript
+- RESTful API endpoints
+- PostgreSQL database integration
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
